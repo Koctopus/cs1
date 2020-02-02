@@ -142,7 +142,7 @@ public class AuthController {
     public String data2learn(@PathVariable Integer id, Model model) {
     	System.out.println("----------"+id);
     	List<Map<String, Object>> ex_data_list = null;
-		ex_data_list = jdbcTemplate.queryForList("SELECT * FROM ex_Data5 where id=?",id);
+		ex_data_list = jdbcTemplate.queryForList("SELECT * FROM ex_Data where id=?",id);
 		String ex_name = ex_data_list.get(0).get("name").toString();
 		String ex_comment = ex_data_list.get(0).get("comment").toString();
 		String image = ex_data_list.get(0).get("image").toString();
@@ -158,7 +158,7 @@ public class AuthController {
     
     @GetMapping("/openfile_editor/{id}")
     public String deletefile(@PathVariable Integer id, Model model) {
-    	jdbcTemplate.update("delete from ex_Data4 where id=?",id);
+    	jdbcTemplate.update("delete from ex_Data where id=?",id);
     	return "openfile_editor";
     }
     

@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="ex_Data5")
+@Table(name="ex_Data")
 public class DataBaseMan2 {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

@@ -37,9 +37,9 @@ header{
 	width: 100%;
 
 	color: #949494;
-	background: #7D7D7D;
+	background: #48D49E;
 
-	flex: 0.8;
+	flex: 0.5;
 }
 
 #hed{
@@ -64,20 +64,19 @@ header{
 	justify-content: center;
 
 	box-sizing: border-box;
-
-	color: white;
-	border-color: #575757;
+	
 	text-decoration: none;
 
 	margin-left: 3px;
 	margin-right: 3px;
 
-	width: 10%;
+	width: 8%;
 	height: 90%;
 
-	border-radius: 8px;
+	border-radius: 5px;
 
-	font-size: 100%;
+	font-size: 200%;
+	font-family: 'OCRB';
 
 	outline: none;
 }
@@ -88,21 +87,17 @@ header{
 }
 
 #fileopen_btn{
-	background: #FF4D4D;
-
-	border: solid 3px;
-}
-
-#run_btn{
-	background: #26B000;
-
-	border: solid 3px;
+	background: white;
+	color:#00663F;
+	border: solid 2px;
+	border-color: #00663F;
 }
 
 #logout_btn{
-	background: #26B000;
+	background: white;
+	color:#00ED92;
 
-	border: solid 3px;
+	border: solid 2px;
 }
 
 #parent{
@@ -115,9 +110,9 @@ header{
 	
 	width: 100%;
 
-	background: #575757;
+	background: white;
 
-	flex: 9.2;
+	flex: 9.5;
 }
 
 #left-side{
@@ -149,8 +144,10 @@ header{
 	margin-top: 0px;
 	margin-bottom: 0.8%;
 
-	border-radius: 30px;
-	background: #B5B5B5;
+	border: solid 2px;
+	border-color: #00945B;
+	border-radius: 5px;
+	background: white;
 
 	flex: 0.5;
 }
@@ -171,7 +168,7 @@ header{
 
 	color: black;
 
-	font-family: arial; 
+	font-family: 'OCRB'; 
 	font-size: 100%;
 }
 
@@ -204,12 +201,13 @@ header{
 	width: 95%;
 	height: 100%;
 
-	border: none;
 	border-radius: 5px;
+	border:solid 2px;
+	border-color: #00945B;
 
-	margin-bottom: 3px;
+	margin-bottom: 10px;
 
-	background: white;
+	background: #EDEDED;
 	flex: 5.5;
 }
 
@@ -230,10 +228,11 @@ header{
 
 	box-sizing: border-box;
 
-	width: 95%;
+	width: 80%;
 
-	border: none;
-	border-radius: 10px;
+	border: solid 2px;
+	border-color: #00ED92;
+	border-radius: 5px;
 	background: #FFFFFF;
 
 	flex: 3.5;
@@ -242,16 +241,13 @@ header{
 #comment textarea{
 	box-sizing: border-box;
 
-	width: 90%;
-	height: 90%;
-
 	border: none;
-	background: #FFFFFF;
+	background: #48D49E;
 
 	outline: none;
 	resize: none;
 
-	font-family: arial; 
+	font-family: 'OCRB';
 	font-size: 100%;
 }
 
@@ -287,7 +283,7 @@ header{
 
 	border-radius: 5px;
 
-	background: #2DC8E3;
+	background: #00945B;
 
 	color: white;
 
@@ -310,7 +306,7 @@ header{
 
 	border-radius: 5px;
 
-	background: #575757;
+	background: white;
 
 	flex: 5;
 	
@@ -331,7 +327,7 @@ header{
 	margin-bottom: 0px;
 
 	border: none;
-	background: #FAFF78;
+	background: #EDEDED;
 
 	outline: none;
 
@@ -353,7 +349,7 @@ header{
 	margin-bottom: 0px;
 
 	border: none;
-	background: #FAFF78;
+	background: #EDEDED;
 
 	outline: none;
 
@@ -373,11 +369,11 @@ header{
 	margin-left: 0px;
 
 	border: none;
-	background: #FAFF78;
+	background: #EDEDED;
 
 	outline: none;
 
-	font-family: New Gulim; 
+	font-family: 'OCRB';
 	font-size: 100%;
 }
 
@@ -387,7 +383,7 @@ header{
 
 	box-sizing: border-box;
 
-	background: #FA9A39;
+	background: #00945B;
 	color: white;
 	text-decoration: none;
 
@@ -402,15 +398,19 @@ header{
 	border: 0px;
 	border-radius: 0px 10px 10px 0px;
 
-	font-size: 150%;
+	font-size: 215%;
 
 	outline: none;
 }
 
 #element_box{
 	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	box-sizing: border-box;
+
+	text-align: center;
 
 	width: 95%;
 
@@ -419,7 +419,7 @@ header{
 
 	border-radius: 5px;
 
-	background: #7EE07E;
+	background: #00BF76;
 
 	flex: 3;
 }

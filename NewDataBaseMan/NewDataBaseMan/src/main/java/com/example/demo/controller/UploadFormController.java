@@ -75,7 +75,7 @@ public class UploadFormController {
         image_data.append("data:image/jpeg;base64,");
         image_data.append(base64);
         
-		jdbcTemplate.update("insert into ex_Data5(username,name,image,comment,formula) VALUES (?,?,?,?,?)",username_insert, ex_name,image_data.toString(),ex_comment,formula);
+		jdbcTemplate.update("insert into ex_Data(username,name,image,comment,formula) VALUES (?,?,?,?,?)",username_insert, ex_name,image_data.toString(),ex_comment,formula);
 		
 	}
 
