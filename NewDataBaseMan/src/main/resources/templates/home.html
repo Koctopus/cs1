@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>yay</title>
+	<script type="text/javascript" src="register.js"></script>
+</head>
+<body>
+<p>
+	<span th:text="${hello}">Hello World!</span>
+</p>
+
+	<table>
+		<tr th:each="data : ${weatherDataList}" th:object="${data}">
+			<td th:text="*{id}"></td>
+			<td th:text="*{name}"></td>
+			<td th:text="*{password}"></td>
+		</tr>
+	</table>
+	
+	<p>aのデータ</p>
+	<table>
+		<tr th:each="data : ${weatherDataTokyo}" th:object="${data}">
+			<td th:text="*{id}"></td>
+			<td th:text="*{name}"></td>
+			<td th:text="*{password}"></td>
+		</tr>
+	</table>
+	
+	<form method="post" name="sampleFormName" action="./sampleFormAction" id="sampleFormId">
+  		<input type="text" name="sampleData">
+  		<button type="submit" name="sampleFormSubmit"></button>
+	</form>
+	
+	<p th:text="${message}"></p>
+	
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<link href="/css/learn.css" th:href="@{/css/learn.css}" rel="stylesheet"></link>
+	<title>
+		CS1_Learn
+	</title>
+	<script>
+		window.onload = function(){
+			formula();
+		}
+	</script>
+</head>
+<body id="god">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+	<form enctype="multipart/form-data" id="learn_form">
+	<header>
+		<div id="hed">
+			<input type="button" id="fileopen_btn" onclick="location.href='/openfile'" value="OPEN">
+
+			<input type="button" id="logout_btn" value="LOGOUT">
+		</div>
+	</header>
+		<div id="parent">
+		<div id="left-side">
+			<div id="ex_name_tb">
+				<div id="ex_name" th:text="${ex_name_data}"></div>
+			</div>
+			<div id="circuit_image">
+				<img id="thumb" src="" alt="画像をドラッグ＆ドロップ"  title="circuit" th:src="${image_data}"/>
+			</div>
+			<div id="comment">
+				<div id="ex_comment" th:text="${ex_comment_data}"></div>
+			</div>
+		</div>
+		<div id="right-side">
+			<div id="special_box">
+				式のGoボタンを押すことでグラフを表示できます．
+			</div>
+			<div id="formula_box">
+				<div id="formula_data" th:text="${formula_data}"></div>
+			</div>
+			<div id="element_box">
+			</div>
+		</div>
+	</div>
+	</form>
+	<script src="/js/learn.js" th:src="@{/js/learn.js}"></script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</html>
